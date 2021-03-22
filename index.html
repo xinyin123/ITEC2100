@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Ottawa Covid Test and Vaccine Location</title>
+    <style>
+      #h1{
+        padding-top:30px;
+        padding-bottom:50px;
+        background-color:black;
+        color:white;
+      }
+      #map{
+        width:90%;
+        height:680px;
+        position:absolute;
+        left:70px;
+      }
+      #label{
+        position:absolute;
+        top:80px;
+        left:20px;
+      }
+      #colourcode{
+        position:absolute;
+        left:72%;
+        top:815px;
+      }
+      #button{
+        position:absolute;
+        top:285px;
+        left:78%;
+        padding:10px;
+        border-radius:6px;
+      }
+      .subtitle {
+        position:relative;
+        left:90px;
+			  width:100%;
+			  font-size:160%;
+			  word-spacing:1em;
+        letter-spacing:0.1em;
+			  text-shadow:1px 1px #a6a6a6;
+			  color:black;
+      }
+      .subtitle a{
+        color:black;
+      }
+      .subtitle a:hover{
+        color:black;
+        padding-top:3px;
+        padding-bottom:3px;
+        padding-left:5px;
+        padding-right:5px;
+        background-color:lightgrey;
+      }
+      .tableauPlaceholder{
+        position:relative;
+        top:110px;
+        left:72%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 id="h1">Ottawa Covid Test and Vaccine Location Map</h1>
+    <p id="label" style="color:grey;">Map created by Jiaziruo Sun, Shuheng Wang, Xinyin Zhang, Xiaoman Lin, Yuchen Hu</p>
+    <!-- header-->
+    <div class="subtitle">
+      <a href="motivation.html" style="text-decoration:none;">Motivation</a>
+      <a href="data.html"style="text-decoration:none;">Data</a>
+      <a href="task_ana.html"style="text-decoration:none;">TaskAnalysis</a>
+      <a href="design_pro.html"style="text-decoration:none;">DesignProcess</a>
+      <a href="index.html"style="text-decoration:none;">Visualization</a>
+      <a href="data_ana.html"style="text-decoration:none;">DataAnalysis</a>
+      <a href="conclusion.html"style="text-decoration:none;">Conclusion</a>
+    </div><hr><br/>
+    <!--embed my map-->
+    <iframe id="map"src="https://www.google.com/maps/d/embed?mid=1WviEog6elheeq_Y18-ViRcRJgZxIfRC1"></iframe>
+    <img id="colourcode" src="image/colormap.png" width="250"/>
+    <!--toggle button-->
+    <button id="button">Case number of neighbourhoods</button>
+    <!--embed ranking chart-->
+    <script type='text/javascript' src='https://prod-useast-b.online.tableau.com/javascripts/api/viz_v1.js'></script>
+    <div class='tableauPlaceholder' style='width: 1440px; height: 767px;'>
+      <object class='tableauViz' width='320' height='553'>
+      <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='&#47;t&#47;itec2100' />
+      <param name='name' value='NeighbourhoodJanCaseNumber&#47;Sheet1' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+      <param name='showAppBanner' value='false' /></object>
+    </div>
+  </body>
+</html>
